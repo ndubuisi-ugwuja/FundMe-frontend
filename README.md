@@ -3,6 +3,10 @@
 A decentralized crowdfunding application built with **JavaScript**, **Ethers.js**, and **MetaMask**.  
 This app allows users to **connect their wallet**, **fund a smart contract**, and **withdraw funds** (restricted to the contract owner).
 
+## Live Demo
+
+[View the deployed site on netlify](https://fundmefinance.netlify.app/)
+
 ## 🚀 Features
 
 -   **Connect Wallet** via MetaMask.
