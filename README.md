@@ -44,33 +44,27 @@ http-server
    • Visit: http://localhost:8080 (or the port shown in your terminal).
    • Make sure MetaMask is connected to the same network as your contract.
 
-# 🖥️ index.html
+## 🖥️ index.html
 
 Your HTML file should have:
 
-• A Connect button (.connect)
+• A Connect button
 
-• A Withdraw button (.withdraw)
+• A Withdraw button
 
-• A funding form with:
+• A funding form with ethAmount input field and fund button
 
-• .ethAmount input field
+• Mining status
 
-• .fund button
+• Waiting status
 
-• Elements to display:
+• Confirmation status
 
-• Mining status (.mining)
+• Transaction hash
 
-• Waiting status (.waiting)
+• Success message
 
-• Confirmation status (.completed)
-
-• Transaction hash (.hash)
-
-• Success message (.success)
-
-# 🛠 index.js Highlights
+## 🛠 index.js Highlights
 
 • Connect Function — Requests wallet connection via MetaMask.
 
@@ -82,12 +76,12 @@ Your HTML file should have:
 
 • Readable Error Handling — Converts raw blockchain errors into user-friendly alerts.
 
-# 🔐 Security Note
+## 🔐 Security Note
 
 • Never expose your private keys or mnemonics in this project.
 
 • The current setup is for testing & demo purposes. Use best practices for production DApps.
 
-# 📜 License
+## 📜 License
 
 This project is open-source and available under the MIT License.
