@@ -10,7 +10,6 @@ This app allows users to **connect their wallet**, **fund a smart contract**, an
 -   **Withdraw Funds** (owner-only function with custom error handling).
 -   **Readable Error Messages** for better user experience.
 -   **Transaction Status Feedback**: mining, waiting for confirmation, and success messages.
--   **Shortened Transaction Hash Display**.
 
 ---
 
@@ -18,7 +17,7 @@ This app allows users to **connect their wallet**, **fund a smart contract**, an
 
 -   **MetaMask** browser extension installed.
 -   Node.js **(optional for local hosting)**.
--   An Ethereum testnet account (e.g., **Sepolia** or **Goerli**) with test ETH.
+-   An Ethereum testnet account (**Sepolia**) with test ETH.
 -   The smart contract deployed and its **ABI** & **contract address** stored in `constants.js`.
 
 ---
@@ -44,33 +43,55 @@ http-server
 3. Open in Browser
    • Visit: http://localhost:8080 (or the port shown in your terminal).
    • Make sure MetaMask is connected to the same network as your contract.
+   ⸻
 
 🖥️ index.html
+
 Your HTML file should have:
+
 • A Connect button (.connect)
+
 • A Withdraw button (.withdraw)
+
 • A funding form with:
+
 • .ethAmount input field
+
 • .fund button
+
 • Elements to display:
+
 • Mining status (.mining)
+
 • Waiting status (.waiting)
+
 • Confirmation status (.completed)
+
 • Transaction hash (.hash)
+
 • Success message (.success)
 ⸻
 
 🛠 index.js Highlights
+
 • Connect Function — Requests wallet connection via MetaMask.
+
 • Fund Function — Sends ETH to contract.
+
 • Withdraw Function — Only contract owner can withdraw; custom error handling for NotOwner.
+
 • Transaction Listener — Displays mining, waiting, and completion messages.
+
 • Readable Error Handling — Converts raw blockchain errors into user-friendly alerts.
+⸻
 
 🔐 Security Note
+
 • Never expose your private keys or mnemonics in this project.
+
 • The current setup is for testing & demo purposes. Use best practices for production DApps.
 ⸻
 
 📜 License
+
 This project is open-source and available under the MIT License.
