@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>FundMe</title>
+    </head>
+    <body>
+        <header>
+            <img
+                src="/fundme-ui/fundme.png"
+                width="250px"
+                height="35px"
+                alt="logo"
+            />
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <img
+                src="/fundme-ui/connect.png"
+                width="120px"
+                alt="connect wallet"
+                id="clickable"
+                class="connect"
+            />
+        </header>
+        <div class="hero">
+            <section class="hero-a">
+                <img src="/fundme-ui/dex.png" alt="dex" class="dex" />
+                <h1>
+                    Revolutionizing <br />
+                    Web3 Finance
+                </h1>
+                <p>
+                    Embrace the power of web technology and be a catalyst for
+                    change. At fundMe finance, we are redefining the way you
+                    give, making your donations more meaningful than ever
+                    before.
+                </p>
+                <div class="buttons">
+                    <img
+                        src="/fundme-ui/fund.png"
+                        width="72px"
+                        alt="fund"
+                        id="clickable"
+                        class="display-fund"
+                    />
+                    <img
+                        src="/fundme-ui/withdraw.png"
+                        width="95px"
+                        alt="withdraw"
+                        id="clickable"
+                        class="withdraw"
+                    />
+                </div>
+            </section>
+            <section class="hero-b">
+                <img src="/fundme-ui/design.png" alt="design" class="design" />
+            </section>
+        </div>
+        <form class="form" style="display: none">
+            <p class="p-form">Enter ETH value to donate:</p>
+            <input class="ethAmount" placeholder="  0.1 ETH" />
+            <img
+                src="fundme-ui/send.png"
+                alt="send"
+                width="72px"
+                id="clickable"
+                class="fund"
+            />
+            <div class="section">
+                <p class="mining"></p>
+                <p class="hash"></p>
+            </div>
+            <p class="waiting"></p>
+            <p class="completed"></p>
+            <p class="success"></p>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+        <script src="/index.js" type="module"></script>
+    </body>
+</html>
