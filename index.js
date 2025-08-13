@@ -24,11 +24,13 @@ async function connect() {
             await window.ethereum.request({ method: "eth_requestAccounts" });
             connectButton.src = "/fundme-ui/connected.png";
         } catch (error) {
-            alert("You are not authorized to make withrawals!");
+            alert("Unexpected error occured! Please reconnect");
             console.error("Error caught:", error);
         }
     } else {
-        alert("Please install MetaMask");
+        alert(
+            "Please install MetaMask or open the site directly in MetaMask's browser if you are on mobile"
+        );
     }
 }
 
@@ -55,7 +57,9 @@ async function fund() {
             );
         }
     } else {
-        alert("Please install MetaMask");
+        alert(
+            "Please install MetaMask or open the site directly in MetaMask's browser if you are on mobile"
+        );
     }
 }
 
@@ -63,7 +67,9 @@ async function withdraw() {
     if (typeof window.ethereum !== "undefined") {
         await handleTx(() => contract.withdraw(), "Withdrawal successful!✅");
     } else {
-        alert("Please install MetaMask");
+        alert(
+            "Please install MetaMask or open the site directly in MetaMask's browser if you are on mobile"
+        );
     }
 }
 
