@@ -53,7 +53,7 @@ async function fund() {
         } catch (error) {
             console.error("Error caught:", error);
             alert(
-                "Unexpected errror occcured! Please check your balance or increase ETH amount."
+                "Unexpected error occcured! Please check your balance or increase ETH amount."
             );
         }
     } else {
