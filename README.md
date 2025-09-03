@@ -31,7 +31,7 @@ This app allows users to **connect their wallet**, **fund a smart contract**, an
 1. **Clone the Repository**
 
 ```bash
-   git clone https://github.com/astrohub-dev/FundMe-frontend.git
+   git clone https://github.com/ndubuisi-ugwuja/FundMe-frontend.git
 ```
 
 2. Run Locally
